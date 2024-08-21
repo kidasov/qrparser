@@ -11,10 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2B11566A8A090D7BA86792BD /* libPods-qrparser-qrparserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9ED7025BA28078B05161CE /* libPods-qrparser-qrparserTests.a */; };
 		71B9D467E364F1AB79DD1027 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5BBA0EEF4BABB495EC253597 /* PrivacyInfo.xcprivacy */; };
+		7D11D65E2C763F4500915AF7 /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11D65D2C763F4500915AF7 /* BarcodeView.swift */; };
+		7D11D6602C763FA600915AF7 /* BarcodeCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11D65F2C763FA600915AF7 /* BarcodeCameraManager.swift */; };
+		7D11D6622C763FF800915AF7 /* BarcodeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11D6612C763FF800915AF7 /* BarcodeDetector.swift */; };
+		7D11D6642C76405E00915AF7 /* BarcodeViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D11D6632C76405E00915AF7 /* BarcodeViewManager.m */; };
+		7D11D6662C7641F900915AF7 /* BarcodeViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11D6652C7641F900915AF7 /* BarcodeViewManager.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B5D05490C036BB9EDB7ED865 /* libPods-qrparser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82718A2CACB6B5D7952D06E8 /* libPods-qrparser.a */; };
+		8EC1DD5FCC35D85D47021CE9 /* libPods-qrparser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA888D268598DBEE86F8AD /* libPods-qrparser.a */; };
+		E47E17E4FA04CF693C88EBCF /* libPods-qrparser-qrparserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A03F8850C84CAB236561DE0 /* libPods-qrparser-qrparserTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,7 @@
 		00E356EE1AD99517003FC87E /* qrparserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qrparserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* qrparserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qrparserTests.m; sourceTree = "<group>"; };
-		0E9ED7025BA28078B05161CE /* libPods-qrparser-qrparserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qrparser-qrparserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAD54726F64C6CA1B0889A8 /* Pods-qrparser-qrparserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser-qrparserTests.release.xcconfig"; path = "Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* qrparser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrparser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = qrparser/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = qrparser/AppDelegate.mm; sourceTree = "<group>"; };
@@ -39,14 +44,21 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = qrparser/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = qrparser/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = qrparser/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		50A32364447B935D4A821D4A /* Pods-qrparser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser.debug.xcconfig"; path = "Target Support Files/Pods-qrparser/Pods-qrparser.debug.xcconfig"; sourceTree = "<group>"; };
+		44E777A0FCFCF5F535E61F37 /* Pods-qrparser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser.release.xcconfig"; path = "Target Support Files/Pods-qrparser/Pods-qrparser.release.xcconfig"; sourceTree = "<group>"; };
+		4CBA888D268598DBEE86F8AD /* libPods-qrparser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qrparser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBA0EEF4BABB495EC253597 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = qrparser/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6B7141A7724EF764EB9102B0 /* Pods-qrparser-qrparserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser-qrparserTests.debug.xcconfig"; path = "Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D11D65C2C763F4500915AF7 /* qrparser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qrparser-Bridging-Header.h"; sourceTree = "<group>"; };
+		7D11D65D2C763F4500915AF7 /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
+		7D11D65F2C763FA600915AF7 /* BarcodeCameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeCameraManager.swift; sourceTree = "<group>"; };
+		7D11D6612C763FF800915AF7 /* BarcodeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDetector.swift; sourceTree = "<group>"; };
+		7D11D6632C76405E00915AF7 /* BarcodeViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeViewManager.m; sourceTree = "<group>"; };
+		7D11D6652C7641F900915AF7 /* BarcodeViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewManager.swift; sourceTree = "<group>"; };
+		7D11D6672C76465800915AF7 /* BackgroundListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundListener.h; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = qrparser/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		82718A2CACB6B5D7952D06E8 /* libPods-qrparser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qrparser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3DD651A140C33D69DC58B0F /* Pods-qrparser-qrparserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser-qrparserTests.debug.xcconfig"; path = "Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1769DCE96C4C1BFC0542185 /* Pods-qrparser-qrparserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser-qrparserTests.release.xcconfig"; path = "Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A03F8850C84CAB236561DE0 /* libPods-qrparser-qrparserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qrparser-qrparserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE7997D1FFDDF4832882F18 /* Pods-qrparser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser.debug.xcconfig"; path = "Target Support Files/Pods-qrparser/Pods-qrparser.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F1523171F15A686F74CC9C66 /* Pods-qrparser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrparser.release.xcconfig"; path = "Target Support Files/Pods-qrparser/Pods-qrparser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B11566A8A090D7BA86792BD /* libPods-qrparser-qrparserTests.a in Frameworks */,
+				E47E17E4FA04CF693C88EBCF /* libPods-qrparser-qrparserTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5D05490C036BB9EDB7ED865 /* libPods-qrparser.a in Frameworks */,
+				8EC1DD5FCC35D85D47021CE9 /* libPods-qrparser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +109,13 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				5BBA0EEF4BABB495EC253597 /* PrivacyInfo.xcprivacy */,
+				7D11D65D2C763F4500915AF7 /* BarcodeView.swift */,
+				7D11D65C2C763F4500915AF7 /* qrparser-Bridging-Header.h */,
+				7D11D65F2C763FA600915AF7 /* BarcodeCameraManager.swift */,
+				7D11D6612C763FF800915AF7 /* BarcodeDetector.swift */,
+				7D11D6632C76405E00915AF7 /* BarcodeViewManager.m */,
+				7D11D6652C7641F900915AF7 /* BarcodeViewManager.swift */,
+				7D11D6672C76465800915AF7 /* BackgroundListener.h */,
 			);
 			name = qrparser;
 			sourceTree = "<group>";
@@ -105,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				82718A2CACB6B5D7952D06E8 /* libPods-qrparser.a */,
-				0E9ED7025BA28078B05161CE /* libPods-qrparser-qrparserTests.a */,
+				4CBA888D268598DBEE86F8AD /* libPods-qrparser.a */,
+				8A03F8850C84CAB236561DE0 /* libPods-qrparser-qrparserTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,10 +164,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				50A32364447B935D4A821D4A /* Pods-qrparser.debug.xcconfig */,
-				F1523171F15A686F74CC9C66 /* Pods-qrparser.release.xcconfig */,
-				B3DD651A140C33D69DC58B0F /* Pods-qrparser-qrparserTests.debug.xcconfig */,
-				D1769DCE96C4C1BFC0542185 /* Pods-qrparser-qrparserTests.release.xcconfig */,
+				CDE7997D1FFDDF4832882F18 /* Pods-qrparser.debug.xcconfig */,
+				44E777A0FCFCF5F535E61F37 /* Pods-qrparser.release.xcconfig */,
+				6B7141A7724EF764EB9102B0 /* Pods-qrparser-qrparserTests.debug.xcconfig */,
+				0DAD54726F64C6CA1B0889A8 /* Pods-qrparser-qrparserTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -160,12 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "qrparserTests" */;
 			buildPhases = (
-				569DE2BF028ECB4818F35B3F /* [CP] Check Pods Manifest.lock */,
+				835DF84DE47C0FB0447617C0 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				EBF26D4DAF7F127A75A1461B /* [CP] Embed Pods Frameworks */,
-				A6F52BB7C1DEBF5675D0D852 /* [CP] Copy Pods Resources */,
+				9BF2A11F37FFF118341585A7 /* [CP] Embed Pods Frameworks */,
+				B0D510366D115E61AB44E3B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,13 +200,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "qrparser" */;
 			buildPhases = (
-				D006315381F9861B9B7041F4 /* [CP] Check Pods Manifest.lock */,
+				FE79AEB6ADEF9FE1901F1349 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				AD10E3322469070C2694E3EA /* [CP] Embed Pods Frameworks */,
-				BE0B90DCF39DB9B5F638AB92 /* [CP] Copy Pods Resources */,
+				3D870D2C095088DBD52BD0A5 /* [CP] Embed Pods Frameworks */,
+				B9ADD1EF0DB1172FC5FFA75E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,7 +230,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -271,7 +290,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		569DE2BF028ECB4818F35B3F /* [CP] Check Pods Manifest.lock */ = {
+		3D870D2C095088DBD52BD0A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qrparser/Pods-qrparser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qrparser/Pods-qrparser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qrparser/Pods-qrparser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835DF84DE47C0FB0447617C0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,7 +329,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A6F52BB7C1DEBF5675D0D852 /* [CP] Copy Pods Resources */ = {
+		9BF2A11F37FFF118341585A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D510366D115E61AB44E3B9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,24 +363,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AD10E3322469070C2694E3EA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-qrparser/Pods-qrparser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-qrparser/Pods-qrparser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qrparser/Pods-qrparser-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE0B90DCF39DB9B5F638AB92 /* [CP] Copy Pods Resources */ = {
+		B9ADD1EF0DB1172FC5FFA75E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,7 +380,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qrparser/Pods-qrparser-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D006315381F9861B9B7041F4 /* [CP] Check Pods Manifest.lock */ = {
+		FE79AEB6ADEF9FE1901F1349 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,23 +402,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EBF26D4DAF7F127A75A1461B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qrparser-qrparserTests/Pods-qrparser-qrparserTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -398,8 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D11D6622C763FF800915AF7 /* BarcodeDetector.swift in Sources */,
+				7D11D6642C76405E00915AF7 /* BarcodeViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				7D11D6662C7641F900915AF7 /* BarcodeViewManager.swift in Sources */,
+				7D11D6602C763FA600915AF7 /* BarcodeCameraManager.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				7D11D65E2C763F4500915AF7 /* BarcodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,8 +440,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3DD651A140C33D69DC58B0F /* Pods-qrparser-qrparserTests.debug.xcconfig */;
+			baseConfigurationReference = 6B7141A7724EF764EB9102B0 /* Pods-qrparser-qrparserTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -443,8 +468,9 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1769DCE96C4C1BFC0542185 /* Pods-qrparser-qrparserTests.release.xcconfig */;
+			baseConfigurationReference = 0DAD54726F64C6CA1B0889A8 /* Pods-qrparser-qrparserTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = qrparserTests/Info.plist;
@@ -467,7 +493,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50A32364447B935D4A821D4A /* Pods-qrparser.debug.xcconfig */;
+			baseConfigurationReference = CDE7997D1FFDDF4832882F18 /* Pods-qrparser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -487,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.test.qr;
 				PRODUCT_NAME = qrparser;
+				SWIFT_OBJC_BRIDGING_HEADER = "qrparser-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -495,7 +522,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1523171F15A686F74CC9C66 /* Pods-qrparser.release.xcconfig */;
+			baseConfigurationReference = 44E777A0FCFCF5F535E61F37 /* Pods-qrparser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -514,6 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.test.qr;
 				PRODUCT_NAME = qrparser;
+				SWIFT_OBJC_BRIDGING_HEADER = "qrparser-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

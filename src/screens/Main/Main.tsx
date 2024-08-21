@@ -5,6 +5,7 @@ const Main = ({ navigation }) => {
     <SafeAreaView>
       <View>
         <Button title={'Show Rn camera'} onPress={() => navigation.navigate('RnVision')} />
+        <Button title={'Show Custom Barcode Scanner'} onPress={() => navigation.navigate('CustomBarcode')} />
       </View>
     </SafeAreaView>
   )
