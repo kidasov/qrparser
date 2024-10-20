@@ -8,29 +8,11 @@ class BarcodeView: UIView, BackgroundListenerDelegate {
     // MARK: - Properties
     var cameraManager: BarcodeCameraManager?
     var barcodeDetector: BarcodeDetector?
-    private var backCamera: AVCaptureDevice?
-    private var captureVideoOutput: AVCaptureVideoDataOutput?
-    private var videoConnection: AVCaptureConnection!
     @objc var onBarcodeRead: RCTDirectEventBlock?
     
-    private var aspectRatio = 1.0
     private var frameHeight = 0.0
     private var frameWidth = 0.0
-
-    private lazy var cameraPreviewLayer: AVCaptureVideoPreviewLayer = {
-        let layer = AVCaptureVideoPreviewLayer(session: captureSession)
-        layer.videoGravity = .resizeAspectFill
-        return layer
-    }()
-    
-    private lazy var captureSession: AVCaptureSession = {
-        let session = AVCaptureSession()
-        session.sessionPreset = .hd1920x1080
-        return session
-    }()
-    
-    private let captureDevice: AVCaptureDevice? = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
-    
+        
     // To see the preview uncomment this code
     private let photoImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -125,7 +107,6 @@ class BarcodeView: UIView, BackgroundListenerDelegate {
     
     private func stopCameraLiveView() {
         barcodeDetector = nil
-        backCamera = nil
         cameraManager = nil
     }
     
