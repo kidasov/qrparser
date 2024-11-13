@@ -6,7 +6,6 @@ class BarcodeCameraManager: NSObject, AVCaptureVideoDataOutputSampleBufferDelega
     // MARK: - Properties
     private var backCamera: AVCaptureDevice?
     private var captureVideoOutput: AVCaptureVideoDataOutput?
-    private var videoConnection: AVCaptureConnection?
     
     var onCaptureOutput: (_ sampleBuffer: CMSampleBuffer) -> Void
     var onShowError: (_ title: String, _ message: String) -> Void
@@ -94,7 +93,6 @@ class BarcodeCameraManager: NSObject, AVCaptureVideoDataOutputSampleBufferDelega
         
         if let captureVideoOutput = captureVideoOutput {
             captureSession.addOutput(captureVideoOutput)
-            videoConnection = captureVideoOutput.connection(with: .video)
         }
     }
     
