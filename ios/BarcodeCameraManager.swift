@@ -53,7 +53,7 @@ class BarcodeCameraManager: NSObject, AVCaptureVideoDataOutputSampleBufferDelega
         
         do {
             try backCamera.lockForConfiguration()
-            backCamera.autoFocusRangeRestriction = .none
+            backCamera.autoFocusRangeRestriction = .near
             backCamera.unlockForConfiguration()
             
             let input = try AVCaptureDeviceInput(device: backCamera)

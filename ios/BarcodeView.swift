@@ -129,8 +129,8 @@ class BarcodeView: UIView, BackgroundListenerDelegate {
     
     // MARK: - Debug Methods
     private func _DebugAddPhotoImagePreview() {
-        let size: CGFloat = 80
-        photoImageView.frame = CGRect(x: 30, y: 90, width: size, height: size)
+        let size: CGFloat = 240
+        photoImageView.frame = CGRect(x: 0, y: 0, width: size, height: size)
         photoImageView.layer.borderColor = UIColor.white.cgColor
         photoImageView.layer.borderWidth = 4
         addSubview(photoImageView)
